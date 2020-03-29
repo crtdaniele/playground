@@ -1,0 +1,193 @@
+.hero{
+    width: 100%;
+    flex-direction: column;
+
+    .hero__slider{
+        width: 100%;
+        height: 100vh;
+
+        .slick-list, .slick-track, .slick-slide, .slick-slide > div{
+            height: 100vh;
+            outline: none;
+        }
+
+        .control-c{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 2;
+            cursor: pointer;
+
+            &.slick-prev{
+                left: 2%;
+
+                @media #{$mq-1000-down}{
+                    left: 0rem;
+                    padding: 20px;
+                }
+            }
+
+            &.slick-next{
+                right: 2%;
+
+                @media #{$mq-1000-down}{
+                    right: 0rem;
+                    padding: 20px;
+                }
+            }
+        }
+
+        .slick-dots{
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            position: absolute;
+            bottom: 25px;
+            margin: 0 auto;
+            width: 100%;
+            outline: none;
+
+            @media #{$mq-1000-down}{
+                display: none !important;
+            }
+
+            li{
+                display: inline-block;
+                opacity: 0.6;
+                transition: opacity .5s;
+                border: 0;
+                background-color: $white;
+                border-radius: 50%;
+                content: "";
+                color: $white;
+                width: 10px;
+                height: 10px;
+                margin: 0 7px;
+                cursor: pointer;
+                outline: none;
+
+                &.slick-active{
+                    opacity: 1;
+                }
+
+                button{
+                    display: none;
+                }
+            }
+        }
+    
+        .hero__slide{
+            width: 100%;
+            background-size: cover;
+            background-position: center center;
+            height: 100%;
+            position: relative;
+
+            .hero__slogan{
+                text-transform: uppercase;
+                font-size: .6rem;
+                letter-spacing: 5rem;
+                line-height: 10rem;
+                color: $white;
+                left: 40%;
+                max-width: 100%;
+                width: 100%;
+
+                @media #{$mq-1600-down}{
+                    line-height: 8rem;
+                    letter-spacing: 4rem;
+                }
+
+                @media #{$mq-760-down}{
+                    line-height: 5rem;
+                    letter-spacing: 3rem;
+                    filter: opacity(0.2);
+                    left: 0%;
+                    padding-left: 4rem;
+                    padding-right: 3rem;
+                    margin-left: 0;
+                    margin-right: 0;
+                }
+
+                @media #{$mq-320-down}{
+                    letter-spacing: 2.5rem;
+                }
+            }
+
+            & > div{
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                max-width: 1200px;
+                width: 100%;
+                margin: 0 auto;
+                left: 0;
+                right: 0;
+
+                @media #{$mq-1600-down}{
+                    max-width: 990px;
+                }
+
+                @media #{$mq-1400-down}{
+                    max-width: 830px;
+                }
+
+                @media #{$mq-1000-down}{
+                    max-width: 100%;
+                    margin-left: 5rem;
+                    margin-right: 3rem;
+                }
+
+                @media #{$mq-760-down}{
+                    max-width: 100%;
+                    margin-left: 3rem;
+                    margin-right: 3rem;
+                }
+
+                h2{
+                    color: $white;
+                    font-size: 4.4rem;
+                    font-weight: 600;
+                    line-height: 4.4rem;
+                    margin-bottom: 30px;
+
+                    @media #{$mq-1000-down}{
+                        font-size: 3rem;
+                        line-height: 3rem;
+                        margin-bottom: 10px;
+                    }
+
+                    @media #{$mq-320-down}{
+                        font-size: 2.5rem;
+                        line-height: 2.5rem;
+                        margin-bottom: 10px;
+                    }
+                }
+
+                .hero__text{
+                    color: $white;
+                    font-size: .9rem;
+                    line-height: 1.7rem;
+
+                    @media #{$mq-1000-down}{
+                        font-size: .8rem;
+                        line-height: 1.5rem;
+                    }
+                }
+            }
+    
+            &.hero__slide--1{
+                background-image: url(../../img/hero/slide_1.png);
+            }
+
+            &.hero__slide--2{
+                background-image: url(../../img/hero/slide_2.png);
+            }
+
+            &.hero__slide--3{
+                background-image: url(../../img/hero/slide_3.png);
+            }
+        }
+    }
+}
+

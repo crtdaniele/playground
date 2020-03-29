@@ -1,0 +1,45 @@
+.header{
+    width: 100%;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    margin: 0 auto;
+    width: 100%;
+    left: 0;
+    right: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    z-index: 1;
+    transition: background-color .5s;
+
+    @media #{$mq-1000-down}{
+        padding-top: 30px;
+        padding-bottom: 22px !important;
+    }
+
+    &.header--scrolled{
+        background-color: rgba(0, 0, 0, .9);
+        width: 100%;
+        max-width: 100%;
+        padding-bottom: 45px;
+        z-index: 100;
+    }
+
+    .header__wrapper{
+        max-width: #{$screenLG};
+        margin: 0 auto;
+
+        @media #{$mq-1600-down}{
+            max-width: #{$screenMD};
+        }
+
+        @media #{$mq-1600-down}{
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        .header__logo{
+            float: left;
+        }
+    }
+}

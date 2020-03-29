@@ -1,0 +1,53 @@
+.nav{
+    float: right;
+
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li{
+            display: inline-block;
+
+            a{
+                color: $white;
+                text-decoration: none;
+                font-size: 0.9rem;
+                margin-left: 50px;
+
+                @media #{$mq-1000-down}{
+                    margin-left: 0px;
+                }
+
+                span{
+                    @media #{$mq-1000-down}{
+                        display: none;
+                    }
+                }
+
+                svg{
+                    font-size: 1rem;
+                    display: none;
+
+                    @media #{$mq-1000-down}{
+                        display: block;
+                        margin-left: 7px;
+                        margin-top: 3px;
+                    }
+                }
+
+                i{
+                    display: none;
+
+                    @media #{$mq-1000-down}{
+                        display: block;
+                    }
+                }
+
+                &:hover{
+                    color: $ltGray;
+                }
+            }
+        }
+    }
+}

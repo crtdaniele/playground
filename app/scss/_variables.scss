@@ -1,0 +1,31 @@
+// Media Queries
+$mq-320-down: "only screen and (max-width: 320px)";
+
+$mq-620-down: "only screen and (max-width: 620px)";
+$mq-620-up: "only screen and (min-width: 620px)";
+
+$mq-760-down: "only screen and (max-width: 759px)";
+$mq-760-up: "only screen and (min-width: 760px)";
+
+$mq-900-down: "only screen and (max-width: 899px)";
+$mq-900-up: "only screen and (min-width: 900px)";
+
+$mq-1000-down: "only screen and (max-width: 999px)";
+$mq-1000-up: "only screen and (min-width: 1000px)";
+
+$mq-1140-down: "only screen and (max-width: 1140px)";
+
+$mq-1400-down: "only screen and (max-width: 1439px)";
+$mq-1400: "only screen and (max-width: 1440px)";
+
+$mq-1600-down: "only screen and (max-width: 1599px)";
+
+// Template
+$screenLG: 1600px;
+$screenMD: 1140px;
+
+// Spacer block
+$mTopLG: 70px;
+$mBottomLG: 70px;
+$mTopMD: 40px;
+$mBottomMD: 40px;

@@ -1,0 +1,175 @@
+.boxtab{
+    max-width: $screenMD;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: $mTopLG;
+    margin-bottom: $mBottomLG;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @media #{$mq-760-down}{
+        flex-direction: column;
+        margin-top: $mTopMD;
+        margin-bottom: $mBottomMD;
+    }
+
+    .boxtab__controls{
+        color: $black;
+        font-size: .9rem;
+        line-height: 1.2rem;
+        width: 45%;
+
+        @media #{$mq-1400-down}{
+            width: 50%;
+        }
+
+        @media #{$mq-1000-down}{
+            font-size: .8rem;
+        }
+  
+        @media #{$mq-760-down}{
+            width: 100%;
+        }
+
+        div{
+            background-color: $dkGray;
+            color: $black;
+            padding: 22px 60px;
+            border-bottom: 1px solid $white;
+            cursor: pointer;
+
+            &:last-child{
+                border-bottom: none;
+            }
+
+            @media #{$mq-1000-down}{
+                padding: 22px 20px;
+            }
+
+            svg{
+                font-size: .65rem;
+                margin-left: 5px;
+                vertical-align: unset;
+            }
+
+            &:hover{
+                background-color: $black;
+                color: $white;
+            }
+        }
+
+        .active{
+            background-color: $black;
+            color: $white;
+
+            svg{
+                animation: rotateArrow .5s forwards;
+            }
+        }
+    }
+
+    .boxtab__content{
+        background-color: $white;
+        width: 100%;
+        position: relative;
+
+        div{
+            display: none;
+            color: $black;
+            font-size: .9rem;
+            line-height: 1.3rem;
+            padding: 50px 100px 130px 100px;
+
+            @media #{$mq-1000-down}{
+                padding: 40px 40px 70px 40px;
+            }
+
+            &:empty{
+                padding: 0;
+            }
+        }
+
+        .active{
+            display: block;
+        }
+
+        .boxtab__loading{
+            margin: 0 auto;
+            padding: 0;
+            max-width: 28px;
+            display: flex;
+            align-items: center;
+            height: 100% !important;
+
+            @media #{$mq-1000-down}{
+                min-height: 400px;
+            }
+
+            img{
+                max-width: 28px;
+                height: 28px;
+                animation: spin 1s infinite;
+            }
+        }
+    }
+}
+
+@-ms-keyframes spin { 
+    from { 
+        -ms-transform: rotate(0deg); 
+    } to { 
+        -ms-transform: rotate(360deg); 
+    }
+}
+@-moz-keyframes spin { 
+    from { 
+        -moz-transform: rotate(0deg); 
+    } to { 
+        -moz-transform: rotate(360deg); 
+    }
+}
+@-webkit-keyframes spin { 
+    from { 
+        -webkit-transform: rotate(0deg); 
+    } to { 
+        -webkit-transform: rotate(360deg); 
+    }
+}
+@keyframes spin { 
+    from { 
+        transform: rotate(0deg); 
+    } to { 
+        transform: rotate(360deg); 
+    }
+}
+
+@-ms-keyframes rotateArrow { 
+    from { 
+        -ms-transform: rotate(0deg); 
+    } to { 
+        -ms-transform: rotate(180deg); 
+    }
+}
+@-moz-keyframes rotateArrow { 
+    from { 
+        -moz-transform: rotate(0deg); 
+    } to { 
+        -moz-transform: rotate(180deg); 
+    }
+}
+@-webkit-keyframes rotateArrow { 
+    from { 
+        -webkit-transform: rotate(0deg); 
+    } to { 
+        -webkit-transform: rotate(180deg); 
+    }
+}
+@keyframes rotateArrow { 
+    from { 
+        transform: rotate(0deg); 
+    } to { 
+        transform: rotate(180deg); 
+    }
+}

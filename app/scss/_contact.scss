@@ -1,0 +1,144 @@
+.contact{
+    max-width: $screenMD;
+    margin: 0 auto;
+    display: flex;
+    color: $white;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    margin-top: $mTopLG;
+    margin-bottom: $mBottomLG;
+
+    @media #{$mq-1140-down}{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        flex-direction: column;
+    }
+
+    @media #{$mq-760-down}{
+        margin-top: $mTopMD;
+        margin-bottom: $mBottomMD;
+    }
+
+    h5{
+        color: $white;
+        font-size: 4rem;
+        line-height: 4rem;
+        margin-bottom: 40px;
+        margin-top: 0px;
+
+        @media #{$mq-760-down}{
+            font-size: 2rem;
+            line-height: 2rem;
+        }
+    }
+
+    p{
+        color: $white;
+        font-size: .8rem;
+        line-height: 1.3rem;
+
+        a{
+            color: $white;
+            text-decoration: none;
+        }
+    }
+
+    .contact__detail{
+        flex: 1.5;
+    }
+
+    .contact__form{
+        flex: 2;
+
+        @media #{$mq-760-down}{
+            margin-top: 30px;
+        }
+
+        .contact__error{
+            border: 1px solid $warning !important;
+        }
+
+        .contact__text{
+            display: flex;
+
+            @media #{$mq-760-down}{
+                flex-direction: column;
+            }
+
+            &.contact__text--full{
+                input[type=text],input[type=email], textarea{
+                    width: 100%;
+                    margin-right: 0px;
+                    margin-left: 0px;
+                }
+            }
+
+            input[type=text], input[type=email], textarea{
+                border: 1px solid $white;
+                background: none;
+                padding: 12px 15px;
+                margin-bottom: 15px;
+                color: $white;
+                outline: none;
+                font-size: .9rem;
+                flex: 1;
+                margin-right: 5px;
+                font-family: Montserrat,sans-serif !important;
+
+                @media #{$mq-760-down}{
+                    margin-right: 0px;
+                    margin-left: 0px;
+                }
+
+                &:nth-child(2){
+                    margin-right: 0px;
+                    margin-left: 5px;
+
+                    @media #{$mq-760-down}{
+                        margin-right: 0px;
+                        margin-left: 0px;
+                    }
+                }
+            }
+        }
+        
+        button{
+            color: $black;
+            background-color: $white;
+            border: 0px solid $black;
+            padding: 12px 40px;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: .1rem;
+            border: 1px solid $black;
+            cursor: pointer;
+            transition: all .3s;
+            outline: none;
+
+            svg{
+                font-size: .8rem;
+            }
+
+            &:hover{
+                color: $white;
+                background-color: $black;
+                border: 1px solid $white;
+            }
+        }
+    }
+
+    ::-webkit-input-placeholder {
+        font-size: .9rem;
+        font-family: Montserrat,sans-serif;
+    }
+      
+    :-ms-input-placeholder {
+        font-size: .9rem;
+        font-family: Montserrat,sans-serif;
+    }
+      
+    ::placeholder {
+        font-size: .9rem;
+        font-family: Montserrat,sans-serif;
+    }
+}
