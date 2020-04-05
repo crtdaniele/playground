@@ -15,7 +15,7 @@ In this proejct, Gulp is configured to run the following functions:
 <h3>Skills</h3>
 
 - HTML5
-- PST to HTML
+- PSD to HTML
 - SCSS (with BEM)
 - Javascript & jQuery
 - Gulp 4
