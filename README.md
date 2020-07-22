@@ -1,4 +1,4 @@
-<h1>Test for Playground Agency</h1>
+<h1>PSD to HTML for Playground Agency</h1>
 
 <h3>Skills</h3>
 
@@ -8,6 +8,6 @@
 - Javascript & jQuery
 - Gulp 4
 
-View the project: https://www.danielecarta.site/projects/playground/index.html
+<hr />
 
-by <a href="https://www.linkedin.com/in/daniele-carta-lugano/?locale=it_IT">Daniele Carta</a>
+<a href="https://www.linkedin.com/in/daniele-carta-lugano/">Follow me in LinkedIn</a>
